@@ -113,7 +113,7 @@
       
           <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
             <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="0-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -166,18 +166,18 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
                 <div id="cover-button" class="w-full lg:w-auto ">
                     
  
-    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+    <div id="" class="flex text-center justify-center items-center  w-full lg:w-auto " x-data="{open: false}">
         
 <button 
  id="" type="button" x-on:click.prevent="open = true" class=" 
   w-full lg:w-auto 
 
-    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
+    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900 z-30">
     <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
 </button>
 
         <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -207,18 +207,18 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
                 <div>
                     
  
-    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+    <div id="" class="flex text-center justify-center items-center  w-full lg:w-auto " x-data="{open: false}">
         
 <button 
  id="side-button" type="button" x-on:click.prevent="open = true" class=" 
   
 
-   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
+   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-40 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900 z-30">
     <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
 </button>
 
         <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -251,7 +251,7 @@ class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:fle
     <div class="relative order-first lg:order-last block lg:w-1/2 ">
 
     
-        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/P882O96YP4CO597T1SXSFBT9AGF1OGJVM06S9NMU.jpeg"  alt = "Main hero image of Sierra Pavers &amp; Power Washing LLC performing Pressure Washing &amp; Paver Care work"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/6TOWD87B9PUL6IEJ8FQNEP6L92DOWUIFT53FCPCU.png"  alt = "Main hero image of Sierra Pavers &amp; Power Washing LLC performing Pressure Washing &amp; Paver Care work"  class="object-cover w-full lg:absolute h-80 lg:h-full">
     
     </div>
 
@@ -263,7 +263,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
         <div class="relative lg:w-1/2">
         
             
-                <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/RJ8MLUH78NDF4IYTCW9N89VNDODE5R48CXVBOLA1.jpeg"   alt="About Us Image"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+                <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/KRP7WM6AX5LU34U2T0BUFMN3CEFJNEFJZB276RNB.jpeg"   alt="About Us Image"  class="object-cover w-full lg:absolute h-80 lg:h-full">
             
         
            
@@ -352,6 +352,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
         <br>
     </div>
 
+                
             
             </div>
             
@@ -593,86 +594,152 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     
     
     
+    
 
     <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden   bg-white text-gray-900   md:pt-20 xl:pt-20 xl:pb-20">
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
             <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
             <h2 class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">See why our customers love us</h2>
-            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/1MA3K84Y7L9RMB4P3PFBZQS3XJXC61AOZ7IIPMUK.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/86PPVXUF530F3UTM1E5MNGC47OVRC7F4YFZFHTQ9.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/IH0WPJ2H17BHOHMNKVR7VAXBZWVHYVBTWNQ63NPZ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/Y2PQBA8X1AKI8SPTHTP00LLFWYJISHMYZ41ZMGNZ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/BO0VA1EGUD49V8LAVXIO6U889FJHTEQERHLEWGPM.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/31TII547EONHOZ23TE5NL8MJ5P2Z034AWXLF8UEC.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/W923765PBAA21W3OPV5JJLE96AJLZKNLMKUEWWKK.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/30NZB46Q8CKWJRW8OAXKQOV52UX9Z73YC8FDEMRD.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/W2FUW3DXZJYMFPAJ79RR430NWVLVH6DN2QPNCBFS.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/BV1GSHEAI5RUKSELT4SHZUSC9NHQZYO19A5KSNSR.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ONG9XEWYWO023PEXE3CKK776YDJZY0W3L54GH08R.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/K76PU4TV9HBBWSYNM0974MKFLBS17Z3R6OIU7YIT.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/HQVR0VYHW8YS5ZVDRDQETA5E8KVE907034B0QOU0.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/2SW59HAO235NYV0ORHX2YNLTAISR1SH34KO1S6IO.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/SXQC83U7PMQ0S8VGI5FHZCJDBH2I029XGPE7S1JR.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/4YH8YLM45XB41YH87E779MW1HYXKNQ7I63FP34BK.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/FCH6OJUHHSOQZ2YJ7VMMZIHIH4JS3537U7UXSEMY.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/CGPNGMKD2KAWUCA1X806LQ2VTG721V5LQOIDULFZ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/4ICNHXKWTS9DM1DRAPE2YIJ1ERL36HFV4Q0BMFRW.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/DWIXAUOUY5TZY7A7BYXUPTZGRBIREF95B8SQAU25.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/EFLAGV3XEYQ8F155VVF71VM1IYY7RSC9D6RDC8R0.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/DRNJZK27JPN19PM2941BKX4VYD13GD17GAVNWR9R.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/GZRGYJ3GRX5VXJC2LIM7BEPET4L5XIBT7HHQE2TF.png', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/X3RZ8PO9HHN7IR4Z4DO5JS7GCK300BIP4FYZDU83.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/N7ECXUJTVAYLYPHJ03YZYIVQ2JVT4YYG3UKYRKZD.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/6K36RXJETOOE46NRUZV523NLCVNTA2NUXGVZYUR0.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/Q2N28WJ8VGV7PNLZF57OARBOKQLZ4WOIF56I9I05.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/USPTOV4T65S210ASUQOD2Z2FEJK08PS03TT12YCW.png', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/1MA3K84Y7L9RMB4P3PFBZQS3XJXC61AOZ7IIPMUK.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/86PPVXUF530F3UTM1E5MNGC47OVRC7F4YFZFHTQ9.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/IH0WPJ2H17BHOHMNKVR7VAXBZWVHYVBTWNQ63NPZ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/Y2PQBA8X1AKI8SPTHTP00LLFWYJISHMYZ41ZMGNZ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/BO0VA1EGUD49V8LAVXIO6U889FJHTEQERHLEWGPM.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/31TII547EONHOZ23TE5NL8MJ5P2Z034AWXLF8UEC.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/W923765PBAA21W3OPV5JJLE96AJLZKNLMKUEWWKK.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/30NZB46Q8CKWJRW8OAXKQOV52UX9Z73YC8FDEMRD.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/W2FUW3DXZJYMFPAJ79RR430NWVLVH6DN2QPNCBFS.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/BV1GSHEAI5RUKSELT4SHZUSC9NHQZYO19A5KSNSR.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ONG9XEWYWO023PEXE3CKK776YDJZY0W3L54GH08R.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/K76PU4TV9HBBWSYNM0974MKFLBS17Z3R6OIU7YIT.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/HQVR0VYHW8YS5ZVDRDQETA5E8KVE907034B0QOU0.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/2SW59HAO235NYV0ORHX2YNLTAISR1SH34KO1S6IO.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/SXQC83U7PMQ0S8VGI5FHZCJDBH2I029XGPE7S1JR.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/1MA3K84Y7L9RMB4P3PFBZQS3XJXC61AOZ7IIPMUK.jpeg"  alt = "Photo number 1 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/4YH8YLM45XB41YH87E779MW1HYXKNQ7I63FP34BK.jpeg"  alt = "Photo number 1 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/86PPVXUF530F3UTM1E5MNGC47OVRC7F4YFZFHTQ9.jpeg"  alt = "Photo number 2 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Decks &amp; Patios job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/FCH6OJUHHSOQZ2YJ7VMMZIHIH4JS3537U7UXSEMY.jpeg"  alt = "Photo number 2 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/IH0WPJ2H17BHOHMNKVR7VAXBZWVHYVBTWNQ63NPZ.jpeg"  alt = "Photo number 3 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Roof Cleaning job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/CGPNGMKD2KAWUCA1X806LQ2VTG721V5LQOIDULFZ.jpeg"  alt = "Photo number 3 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Y2PQBA8X1AKI8SPTHTP00LLFWYJISHMYZ41ZMGNZ.jpeg"  alt = "Photo number 4 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Home Softwash job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/4ICNHXKWTS9DM1DRAPE2YIJ1ERL36HFV4Q0BMFRW.jpeg"  alt = "Photo number 4 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BO0VA1EGUD49V8LAVXIO6U889FJHTEQERHLEWGPM.jpeg"  alt = "Photo number 5 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Decks &amp; Patios job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DWIXAUOUY5TZY7A7BYXUPTZGRBIREF95B8SQAU25.jpeg"  alt = "Photo number 5 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/31TII547EONHOZ23TE5NL8MJ5P2Z034AWXLF8UEC.jpeg"  alt = "Photo number 6 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Decks &amp; Patios job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/EFLAGV3XEYQ8F155VVF71VM1IYY7RSC9D6RDC8R0.jpeg"  alt = "Photo number 6 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/W923765PBAA21W3OPV5JJLE96AJLZKNLMKUEWWKK.jpeg"  alt = "Photo number 7 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Roof Cleaning job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DRNJZK27JPN19PM2941BKX4VYD13GD17GAVNWR9R.jpeg"  alt = "Photo number 7 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/30NZB46Q8CKWJRW8OAXKQOV52UX9Z73YC8FDEMRD.jpeg"  alt = "Photo number 8 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Decks &amp; Patios job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/GZRGYJ3GRX5VXJC2LIM7BEPET4L5XIBT7HHQE2TF.png"  alt = "Photo number 8 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/W2FUW3DXZJYMFPAJ79RR430NWVLVH6DN2QPNCBFS.jpeg"  alt = "Photo number 9 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Retaining Walls job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/X3RZ8PO9HHN7IR4Z4DO5JS7GCK300BIP4FYZDU83.jpeg"  alt = "Photo number 9 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BV1GSHEAI5RUKSELT4SHZUSC9NHQZYO19A5KSNSR.jpeg"  alt = "Photo number 10 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Pavement Dye job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/N7ECXUJTVAYLYPHJ03YZYIVQ2JVT4YYG3UKYRKZD.jpeg"  alt = "Photo number 10 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ONG9XEWYWO023PEXE3CKK776YDJZY0W3L54GH08R.jpeg"  alt = "Photo number 11 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/6K36RXJETOOE46NRUZV523NLCVNTA2NUXGVZYUR0.jpeg"  alt = "Photo number 11 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/K76PU4TV9HBBWSYNM0974MKFLBS17Z3R6OIU7YIT.jpeg"  alt = "Photo number 12 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Decks &amp; Patios job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Q2N28WJ8VGV7PNLZF57OARBOKQLZ4WOIF56I9I05.jpeg"  alt = "Photo number 12 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 12; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HQVR0VYHW8YS5ZVDRDQETA5E8KVE907034B0QOU0.jpeg"  alt = "Photo number 13 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 12; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/USPTOV4T65S210ASUQOD2Z2FEJK08PS03TT12YCW.png"  alt = "Photo number 13 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 13; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2SW59HAO235NYV0ORHX2YNLTAISR1SH34KO1S6IO.jpeg"  alt = "Photo number 14 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Decks &amp; Patios job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 13; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/1MA3K84Y7L9RMB4P3PFBZQS3XJXC61AOZ7IIPMUK.jpeg"  alt = "Photo number 14 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 14; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/SXQC83U7PMQ0S8VGI5FHZCJDBH2I029XGPE7S1JR.jpeg"  alt = "Photo number 15 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 14; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/86PPVXUF530F3UTM1E5MNGC47OVRC7F4YFZFHTQ9.jpeg"  alt = "Photo number 15 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Decks &amp; Patios job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 15; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/IH0WPJ2H17BHOHMNKVR7VAXBZWVHYVBTWNQ63NPZ.jpeg"  alt = "Photo number 16 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Roof Cleaning job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 16; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Y2PQBA8X1AKI8SPTHTP00LLFWYJISHMYZ41ZMGNZ.jpeg"  alt = "Photo number 17 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Home Softwash job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 17; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BO0VA1EGUD49V8LAVXIO6U889FJHTEQERHLEWGPM.jpeg"  alt = "Photo number 18 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Decks &amp; Patios job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 18; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/31TII547EONHOZ23TE5NL8MJ5P2Z034AWXLF8UEC.jpeg"  alt = "Photo number 19 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Decks &amp; Patios job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 19; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/W923765PBAA21W3OPV5JJLE96AJLZKNLMKUEWWKK.jpeg"  alt = "Photo number 20 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Roof Cleaning job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 20; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/30NZB46Q8CKWJRW8OAXKQOV52UX9Z73YC8FDEMRD.jpeg"  alt = "Photo number 21 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Decks &amp; Patios job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 21; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/W2FUW3DXZJYMFPAJ79RR430NWVLVH6DN2QPNCBFS.jpeg"  alt = "Photo number 22 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Retaining Walls job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 22; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BV1GSHEAI5RUKSELT4SHZUSC9NHQZYO19A5KSNSR.jpeg"  alt = "Photo number 23 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Pavement Dye job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 23; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ONG9XEWYWO023PEXE3CKK776YDJZY0W3L54GH08R.jpeg"  alt = "Photo number 24 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 24; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/K76PU4TV9HBBWSYNM0974MKFLBS17Z3R6OIU7YIT.jpeg"  alt = "Photo number 25 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Decks &amp; Patios job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 25; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HQVR0VYHW8YS5ZVDRDQETA5E8KVE907034B0QOU0.jpeg"  alt = "Photo number 26 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Driveway &amp; Sidewalk Cleaning job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 26; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2SW59HAO235NYV0ORHX2YNLTAISR1SH34KO1S6IO.jpeg"  alt = "Photo number 27 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a Decks &amp; Patios job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 27; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/SXQC83U7PMQ0S8VGI5FHZCJDBH2I029XGPE7S1JR.jpeg"  alt = "Photo number 28 of Sierra Pavers &amp; Power Washing LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                  
                                     
